@@ -1,0 +1,33 @@
+<section class="max-w-xl">
+  <ui-table>
+    <caption ui-table-caption>
+      A list of your recent invoices.
+    </caption>
+    <thead ui-table-header>
+      <tr ui-table-row>
+        <th ui-table-head class="w-[100px]">Invoice</th>
+        <th ui-table-head>Status</th>
+        <th ui-table-head>Method</th>
+        <th ui-table-head class="text-right">Amount</th>
+      </tr>
+    </thead>
+
+    <tbody ui-table-body>
+      @for(invoice of invoices; track invoice.invoice) {
+      <tr ui-table-row>
+        <td ui-table-cell class="font-medium">{{ invoice.invoice }}</td>
+        <td ui-table-cell>{{ invoice.paymentStatus }}</td>
+        <td ui-table-cell>{{ invoice.paymentMethod }}</td>
+        <td ui-table-cell class="text-right">{{ invoice.totalAmount }}</td>
+      </tr>
+      }
+    </tbody>
+
+    <tfoot ui-table-footer>
+      <tr ui-table-row>
+        <td ui-table-cell colspan="3">Total</td>
+        <td ui-table-cell class="text-right">$2,500.00</td>
+      </tr>
+    </tfoot>
+  </ui-table>
+</section>
