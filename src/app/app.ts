@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@lib/components/accordion/accordion';
+import { AvatarDemo } from 'src/components/demos/avatar-demo/avatar-demo';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
+    AvatarDemo,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

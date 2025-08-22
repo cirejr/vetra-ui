@@ -8,7 +8,7 @@ import { remixMailAddLine } from '@ng-icons/remixicon';
   imports: [NgIcon, Button],
   viewProviders: [provideIcons({ remixMailAddLine })],
   template: `
-    <section class="flex items-center gap-1.5">
+    <section class="flex items-center gap-3">
       <button ui-button size="lg">primary lg</button>
       <button ui-button variant="secondary">secondary</button>
       <button ui-button variant="ghost" size="lg">ghost</button>
