@@ -7,8 +7,38 @@
 @custom-variant dark (&:is(.dark *));
 
 @custom-variant fixed (&:is(.layout-fixed *));
+/* styles.css or global.css */
+
+@keyframes accordion-slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--ngp-accordion-content-height);
+  }
+}
+
+@keyframes accordion-slideUp {
+  from {
+    height: var(--ngp-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+/* Attach animations to the ngpAccordionContent data attributes */
+[ngpAccordionContent][data-open] {
+  animation: accordion-slideDown 0.2s ease-in-out forwards;
+}
+
+[ngpAccordionContent][data-closed] {
+  animation: accordion-slideUp 0.2s ease-in-out forwards;
+}
 
 @theme inline {
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
   --font-geist: 'Geist', sans-serif;
   --font-geist-mono: 'Geist Mono';
   --breakpoint-3xl: 1600px;

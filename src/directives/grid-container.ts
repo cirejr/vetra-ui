@@ -41,9 +41,9 @@ export class GridContainer {
     cn(
       this.class(),
       'relative',
-      'before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10',
+      'before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-border dark:before:bg-white/10',
       this.topDirectionClass(),
-      'after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10',
+      'after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-border dark:after:bg-white/10',
       this.bottomDirectionClass()
     )
   );

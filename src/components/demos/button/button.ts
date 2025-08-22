@@ -13,7 +13,6 @@ import { remixMailAddLine } from '@ng-icons/remixicon';
       <button ui-button variant="secondary">secondary</button>
       <button ui-button variant="ghost" size="lg">ghost</button>
       <button ui-button variant="destructive" size="sm">destructive sm</button>
-      <button ui-button variant="link" size="lg" class="underline">link</button>
       <button ui-button variant="outline">outline</button>
       <button ui-button variant="outline">
         with icon

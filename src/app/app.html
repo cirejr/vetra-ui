@@ -14,50 +14,60 @@
     <div gridContainer class="grid gap-24 pb-24 text-gray-950 sm:gap-40 md:pb-40 dark:text-white">
       <app-table-demo></app-table-demo>
       <app-card-demo></app-card-demo>
-      <div gridContainer>
+      <div gridContainer class="py-6 mx-auto">
         <app-button></app-button>
       </div>
-      <ui-accordion type="single" collapsible className="w-full">
-        <ui-accordion-item value="item-1">
-          <ui-accordion-trigger>Product Information</ui-accordion-trigger>
-          <ui-accordion-content class="flex flex-col gap-4 text-balance">
-            <p>
-              Our flagship product combines cutting-edge technology with sleek design. Built with
-              premium materials, it offers unparalleled performance and reliability.
-            </p>
-            <p>
-              Key features include advanced processing capabilities, and an intuitive user interface
-              designed for both beginners and experts.
-            </p>
-          </ui-accordion-content>
-        </ui-accordion-item>
-        <ui-accordion-item value="item-2">
-          <ui-accordion-trigger>Shipping Details</ui-accordion-trigger>
-          <ui-accordion-content class="flex flex-col gap-4 text-balance">
-            <p>
-              We offer worldwide shipping through trusted courier partners. Standard delivery takes
-              3-5 business days, while express shipping ensures delivery within 1-2 business days.
-            </p>
-            <p>
-              All orders are carefully packaged and fully insured. Track your shipment in real-time
-              through our dedicated tracking portal.
-            </p>
-          </ui-accordion-content>
-        </ui-accordion-item>
-        <ui-accordion-item value="item-3">
-          <ui-accordion-trigger>Return Policy</ui-accordion-trigger>
-          <ui-accordion-content class="flex flex-col gap-4 text-balance">
-            <p>
-              We stand behind our products with a comprehensive 30-day return policy. If you&apos;re
-              not completely satisfied, simply return the item in its original condition.
-            </p>
-            <p>
-              Our hassle-free return process includes free return shipping and full refunds
-              processed within 48 hours of receiving the returned item.
-            </p>
-          </ui-accordion-content>
-        </ui-accordion-item>
-      </ui-accordion>
+      <div gridContainer class="px-6 w-md mx-auto">
+        <ui-accordion type="single" collapsible class="w-md">
+          <ui-accordion-item value="item-1" class="">
+            <ui-accordion-trigger>Product Information</ui-accordion-trigger>
+            <ui-accordion-content class="flex flex-col gap-4 text-balance">
+              <p>
+                Our flagship product combines cutting-edge technology with sleek design. Built with
+                premium materials, it offers unparalleled performance and reliability.
+              </p>
+              <p>
+                Key features include advanced processing capabilities, and an intuitive user
+                interface designed for both beginners and experts.
+              </p>
+            </ui-accordion-content>
+          </ui-accordion-item>
+          <ui-accordion-item value="item-2">
+            <ui-accordion-trigger>Shipping Details</ui-accordion-trigger>
+            <ui-accordion-content class="flex flex-col gap-4 text-balance">
+              <p>
+                We offer worldwide shipping through trusted courier partners. Standard delivery
+                takes 3-5 business days, while express shipping ensures delivery within 1-2 business
+                days.
+              </p>
+              <p>
+                All orders are carefully packaged and fully insured. Track your shipment in
+                real-time through our dedicated tracking portal.
+              </p>
+            </ui-accordion-content>
+          </ui-accordion-item>
+          <ui-accordion-item value="item-3">
+            <ui-accordion-trigger>Return Policy</ui-accordion-trigger>
+            <ui-accordion-content class="flex flex-col gap-4 text-balance">
+              <p>
+                We stand behind our products with a comprehensive 30-day return policy. If
+                you&apos;re not completely satisfied, simply return the item in its original
+                condition.
+              </p>
+              <p>
+                Our hassle-free return process includes free return shipping and full refunds
+                processed within 48 hours of receiving the returned item.
+              </p>
+            </ui-accordion-content>
+          </ui-accordion-item>
+        </ui-accordion>
+      </div>
+
+      <div gridContainer direction="full" class="mx-auto py-6 w-sm">
+        <app-card-demo></app-card-demo>
+        <!-- <FooterSitemap class="*:first:border-l-0 *:last:border-r-0" /> -->
+      </div>
+
       <!--  <Hero />
       <PartnersSection />
       <WhyTailwindCssSection />
