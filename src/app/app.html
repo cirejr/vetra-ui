@@ -63,9 +63,18 @@
         </ui-accordion>
       </div>
 
-      <div gridContainer direction="full" class="mx-auto py-6 w-sm">
+      <div gridContainer direction="full" class="mx-auto py-6 w-sm gap-10">
         <app-avatar-demo></app-avatar-demo>
         <!-- <FooterSitemap class="*:first:border-l-0 *:last:border-r-0" /> -->
+        <app-listbox-demo></app-listbox-demo>
+        <app-popover-demo></app-popover-demo>
+
+        <!--  <radix-select-demo></radix-select-demo> -->
+      </div>
+
+      <div gridContainer direction="full" class="mx-auto py-6 w-sm gap-10">
+        <app-select-demo></app-select-demo>
+        <app-default-select [options]="options" placeholder="Select a character" />
       </div>
 
       <!--  <Hero />

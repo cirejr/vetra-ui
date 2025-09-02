@@ -11,23 +11,46 @@ import {
   AccordionTrigger,
 } from '@lib/components/accordion/accordion';
 import { AvatarDemo } from 'src/components/demos/avatar-demo/avatar-demo';
+import { SelectDemo } from 'src/components/demos/select-demo/select-demo';
+import { DefaultSelectDemo } from 'src/components/demos/default-select-demo/default-select-demo';
+import { DefaultSelect } from '@lib/components/default-select/default-select';
+import ListboxDemo from 'src/components/demos/listbox-demo/listbox-demo';
+import { PopoverDemo } from 'src/components/demos/popover-demo/popover-demo';
 
 @Component({
   selector: 'app-root',
   imports: [
     GridContainer,
-    CardDemo,
-    TableDemo,
     ButtonDemo,
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
     AvatarDemo,
+    SelectDemo,
+    DefaultSelect,
+    ListboxDemo,
+    PopoverDemo,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('vetra-ui');
+
+  readonly options: string[] = [
+    'Marty McFly',
+    'Doc Brown',
+    'Biff Tannen',
+    'George McFly',
+    'Jennifer Parker',
+    'Emmett Brown',
+    'Einstein',
+    'Clara Clayton',
+    'Needles',
+    'Goldie Wilson',
+    'Marvin Berry',
+    'Lorraine Baines',
+    'Strickland',
+  ];
 }

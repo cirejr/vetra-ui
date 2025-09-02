@@ -1,0 +1,19 @@
+<button ui-button variant="outline" [sheetTrigger]="sheet" ui-sheet-trigger>open</button>
+
+<ng-template #sheet let-close="close">
+  <div ui-sheet-overlay>
+    <div ui-sheet side="bottom">
+      <div ui-sheet-header>
+        <h1 ui-sheet-title>Are you absolutely sure?</h1>
+        <p ui-sheet-description>
+          This action cannot be undone. This will permanently delete your account and remove your
+          data from our servers.
+        </p>
+      </div>
+      <div ui-sheet-footer>
+        <button ui-button (click)="close()" variant="outline">Cancel</button>
+        <button ui-button (click)="close()">Continue</button>
+      </div>
+    </div>
+  </div>
+</ng-template>

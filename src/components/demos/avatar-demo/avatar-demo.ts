@@ -7,7 +7,13 @@ import { Avatar, AvatarImage, AvatarFallback } from '@lib/components/avatar/avat
   template: `
     <div class="flex flex-row flex-wrap items-center gap-12">
       <ui-avatar>
-        <img ui-avatar-image src="https://github.com/shadcn.png" alt="@shadcn" />
+        <img
+          ui-avatar-image
+          src="https://github.com/shadcn.png"
+          alt="@shadcn"
+          class="size-8"
+          size="lg"
+        />
         <span ui-avatar-fallback>CN</span>
       </ui-avatar>
       <ui-avatar class="rounded-lg">
